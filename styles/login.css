@@ -1,0 +1,906 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.auth {
+    flex: 1;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+}
+
+.auth .main-content-view {
+    padding: 20px;
+}
+
+.auth .main-auth-scrollbar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth .footer {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+@media screen and (min-width: 1280px) {
+    .boxedLayout {
+        max-width: 1260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxedLayout #root {
+        -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    .boxedLayout .appMainFixedFooter .app-main-footer {
+        max-width: 1260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxedLayout .mini-sidebar-toggle.ant-layout-sider,
+    .boxedLayout .mini-sidebar.ant-layout-sider,
+    .boxedLayout .userMiniHeader-sidebar.ant-layout-sider {
+        position: absolute;
+    }
+
+    .boxedLayout .app-header-mini-sidebar,
+    .boxedLayout .app-header-mini,
+    .boxedLayout .app-userMiniHeader {
+        position: absolute;
+        width: 100% !important;
+    }
+
+    .boxedLayout .mini-sidebar-toggle.ant-layout-sider-collapsed + .app-layout-mini-sidebar-main .app-header-mini-sidebar,
+    .boxedLayout .mini-sidebar.ant-layout-sider-collapsed + .app-layout-mini-main .app-header-mini,
+    .boxedLayout .userMiniHeader-sidebar.ant-layout-sider-collapsed + .app-layout-userMiniHeader-main .app-userMiniHeader {
+        width: 100% !important;
+    }
+
+    .boxedLayout .app-layout-mini-sidebar,
+    .boxedLayout .app-layout-mini,
+    .boxedLayout .app-layout-userMiniHeader {
+        padding-top: 0;
+    }
+
+    .boxedLayout .app-layout-mini-sidebar-main,
+    .boxedLayout .app-layout-mini-main,
+    .boxedLayout .app-layout-userMiniHeader-main {
+        padding-top: 71px;
+    }
+
+    .boxedLayout .coin-stats-content h3 {
+        font-size: 16px;
+    }
+
+    .boxedLayout .coin-stats-content span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .boxedLayout {
+        max-width: 1460px;
+    }
+
+    .boxedLayout .appMainFixedFooter .app-main-footer {
+        max-width: 1460px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .framedLayout {
+        padding: 20px;
+        background-color: #F04F47;
+    }
+
+    .framedLayout #root {
+        height: calc(100vh - 2 * 20px);
+        overflow: hidden;
+        -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+    }
+
+    .framedLayout.framedHorLayout #root,
+    .framedLayout.framedHorDarkLayout #root,
+    .framedLayout.framedHorHeaderFixedLayout #root {
+        overflow-y: auto;
+    }
+
+    .framedLayout .app-sidebar-scrollbar,
+    .framedLayout .main-scrollbar,
+    .framedLayout .app-mini-sidebar-scrollbar,
+    .framedLayout .main-mini-sidebar-scrollbar,
+    .framedLayout .main-mini-scrollbar,
+    .framedLayout .standard-main-scrollbar,
+    .framedLayout .userHeader-main-scrollbar,
+    .framedLayout .main-userMiniHeader-scrollbar,
+    .framedLayout .drawerLayout-main-scrollbar,
+    .framedLayout .app-BitBucket-sidebar-scrollbar {
+        max-height: calc(100vh - (71px + 2 * 20px));
+    }
+
+    .framedLayout .app-standard-sidebar-scrollbar {
+        max-height: calc(100vh - (140px + 2 * 20px));
+    }
+
+    .framedLayout .app-userHeader-sidebar-scrollbar,
+    .framedLayout .app-sidebar-userMiniHeader-scrollbar,
+    .framedLayout .bitBucket-main-scrollbar,
+    .framedLayout .bucket-minibar {
+        max-height: calc(100vh - (2 * 20px));
+    }
+
+    .framedLayout .app-layout {
+        height: calc(100vh - 2 * 20px);
+        min-height: 10px;
+    }
+
+    .framedLayout .auth {
+        min-height: 10px;
+        height: 100%;
+    }
+
+    .framedLayout .main-auth-scrollbar {
+        min-height: 10px;
+    }
+
+    .framedLayout .apps-container {
+        height: calc(100vh - (153px + 2 * 20px));
+    }
+
+    .framedLayout .app-layout-mini-sidebar,
+    .framedLayout .app-layout-mini,
+    .framedLayout .app-layout-hor,
+    .framedLayout .app-layout-hor-header-fixed {
+        min-height: 100%;
+    }
+
+    .framedLayout .mini-sidebar-toggle.ant-layout-sider,
+    .framedLayout .mini-sidebar.ant-layout-sider,
+    .framedLayout .userMiniHeader-sidebar.ant-layout-sider {
+        position: absolute;
+    }
+
+    .framedLayout .app-header-mini-sidebar,
+    .framedLayout .app-header-mini,
+    .framedLayout .app-userMiniHeader {
+        position: absolute;
+        width: 100% !important;
+    }
+
+    .framedLayout .mini-sidebar-toggle.ant-layout-sider-collapsed + .app-layout-mini-sidebar-main .app-header-mini-sidebar,
+    .framedLayout .mini-sidebar.ant-layout-sider-collapsed + .app-layout-mini-main .app-header-mini,
+    .framedLayout .userMiniHeader-sidebar.ant-layout-sider-collapsed + .app-layout-userMiniHeader-main .app-userMiniHeader {
+        width: 100% !important;
+    }
+
+    .framedLayout .app-layout-mini-sidebar,
+    .framedLayout .app-layout-mini,
+    .framedLayout .app-layout-userMiniHeader {
+        padding-top: 0;
+    }
+
+    .framedLayout .app-layout-mini-sidebar-main,
+    .framedLayout .app-layout-mini-main,
+    .framedLayout .app-layout-userMiniHeader-main {
+        padding-top: 71px;
+    }
+}
+
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+[data-simplebar] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+[data-simplebar] .simplebar-offset,
+[data-simplebar] .simplebar-content-wrapper,
+[data-simplebar] .simplebar-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+[data-simplebar] {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.simplebar-wrapper {
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.simplebar-mask {
+    direction: inherit;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: auto !important;
+    height: auto !important;
+    z-index: 0;
+}
+
+.simplebar-offset {
+    direction: inherit !important;
+    box-sizing: inherit !important;
+    resize: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.simplebar-content-wrapper {
+    direction: inherit;
+    box-sizing: border-box !important;
+    position: relative;
+    display: block;
+    height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+    width: auto;
+    max-width: 100%; /* Not required for horizontal scroll to trigger */
+    max-height: 100%; /* Needed for vertical scroll to trigger */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.simplebar-content:before,
+.simplebar-content:after {
+    content: ' ';
+    display: table;
+}
+
+.simplebar-placeholder {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.simplebar-height-auto-observer-wrapper {
+    box-sizing: inherit !important;
+    height: 100%;
+    width: 100%;
+    max-width: 1px;
+    position: relative;
+    float: left;
+    max-height: 1px;
+    overflow: hidden;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+    flex-grow: inherit;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+.simplebar-height-auto-observer {
+    box-sizing: inherit;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000%;
+    width: 1000%;
+    min-height: 1px;
+    min-width: 1px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.simplebar-track {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+    pointer-events: all;
+}
+
+.simplebar-scrollbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    min-height: 10px;
+}
+
+.simplebar-scrollbar:before {
+    position: absolute;
+    content: '';
+    background: black;
+    border-radius: 7px;
+    left: 2px;
+    right: 2px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+    /* When hovered, remove all transitions from drag handle */
+    opacity: 0.5;
+    transition: opacity 0s linear;
+}
+
+.simplebar-track.simplebar-vertical {
+    top: 0;
+    width: 11px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+    top: 2px;
+    bottom: 2px;
+}
+
+.simplebar-track.simplebar-horizontal {
+    left: 0;
+    height: 11px;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+    height: 100%;
+    left: 2px;
+    right: 2px;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    right: auto;
+    left: 0;
+    top: 2px;
+    height: 7px;
+    min-height: 0;
+    min-width: 10px;
+    width: auto;
+}
+
+/* Rtl support */
+[data-simplebar-direction='rtl'] .simplebar-track.simplebar-vertical {
+    right: auto;
+    left: 0;
+}
+
+.hs-dummy-scrollbar-size {
+    direction: rtl;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    height: 500px;
+    width: 500px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.simplebar-hide-scrollbar {
+    position: fixed;
+    left: 0;
+    visibility: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.auth-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-card {
+    max-width: 900px;
+    min-height: 350px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: 0 none;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+    .auth-card {
+        min-height: 450px;
+    }
+}
+
+.auth-card .ant-card-body {
+    padding: 0;
+    display: flex;
+    flex: 1;
+}
+
+.auth-card-header {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .auth-card-header {
+        margin-bottom: 25px;
+    }
+}
+
+.auth-card-header img {
+    cursor: pointer;
+    height: 36px;
+    margin-right: 10px;
+}
+
+[dir=rtl] .auth-card-header img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.auth-logo-name {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.auth-main-content, .auth-main-contentSignup {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    .auth-main-content, .auth-main-contentSignup {
+        padding: 20px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .auth-main-content {
+        width: 40%;
+        padding: 40px;
+    }
+
+    .auth-main-contentSignup {
+        width: 55%;
+        padding: 40px;
+    }
+
+    .header-signup {
+        font-weight: 500;
+        margin-bottom: 0px;
+        color: #000c17;
+    }
+}
+
+.auth-wel-action {
+    position: relative;
+    padding: 24px;
+    display: none;
+    background-color: #212121;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    .auth-wel-action {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .auth-wel-action {
+        width: 60%;
+        padding: 40px;
+    }
+}
+
+.auth-wel-action h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.auth-wel-action p {
+    line-height: 1.6;
+}
+
+.auth-wel-action p:last-child {
+    margin-bottom: 0;
+}
+
+.auth-wel-content {
+    max-width: 320px;
+}
+
+.auth-recon-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.auth-recon-content .ant-card-body {
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 576px) {
+    .auth-recon-content .ant-card-body {
+        padding-top: 28px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .auth-recon-content .ant-card-body {
+        padding-top: 40px;
+    }
+}
+
+.confirm-content {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1600px) {
+    .confirm-content {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+}
+
+.confirm-code-input {
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1600px) {
+    .confirm-code-input {
+        margin-bottom: 40px;
+    }
+}
+
+.confirm-code-input .react-code-input input:focus {
+    outline: none;
+}
+
+.confirm-btn {
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.reset-btn {
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.reset-form {
+    position: relative;
+}
+
+.reset-form .form-field {
+    margin-bottom: 20px;
+}
+
+.reset-form .form-field p {
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1600px) {
+    .reset-form .form-field p {
+        font-size: 16px;
+    }
+}
+
+.reset-form .ant-form-item-explain-error {
+    text-align: left;
+}
+
+[dir=rtl] .reset-form .ant-form-item-explain-error {
+    text-align: right;
+}
+
+.reset-form .react-code-input input:focus {
+    outline: none;
+}
+
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.app-logo {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+}
+
+.app-logo img {
+    height: 75px;
+    margin-right: 10px;
+}
+
+[dir=rtl] .app-logo img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.app-logo-name {
+    font-weight: 500;
+    font-size: 24px;
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .app-logo-name {
+        display: block;
+    }
+}
+
+.app-logo-name.white {
+    color: #fff;
+}
+
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.sign {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-footer {
+    background-color: #F4F7FE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+    margin: 12px -24px -24px;
+}
+
+@media screen and (min-width: 576px) {
+    .sign-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: -20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .sign-footer {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: -40px;
+        margin-right: -40px;
+        margin-bottom: -40px;
+    }
+}
+
+.sign-footer .signup-btn {
+    text-transform: capitalize;
+}
+
+.sign-text {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+[dir=rtl] .sign-text {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .sign-text {
+        margin-right: 16px;
+    }
+
+    [dir=rtl] .sign-text {
+        margin-right: 0;
+        margin-left: 16px;
+    }
+}
+
+.sign-text-grey {
+    color: #959ca9;
+}
+
+.sign-socialLink {
+    display: flex;
+    align-items: center;
+}
+
+.sign-link {
+    color: #0A8FDC;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    text-align: right;
+    display: block;
+}
+
+[dir=rtl] .sign-link {
+    text-align: left;
+}
+
+.sign-btn {
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.sign-btn-full {
+    width: 100%;
+}
+
+.sign-icon-btn {
+    color: #6b7280;
+    padding: 6px 4px 4px;
+    border: 0 none;
+    box-shadow: none;
+    background-color: transparent;
+    width: 26px;
+    min-width: 26px;
+    height: 26px;
+}
+
+@media screen and (min-width: 768px) {
+    .sign-icon-btn {
+        width: 36px;
+        min-width: 36px;
+        height: 36px;
+        padding: 8px 6px 6px;
+    }
+}
+
+.sign-icon-btn:hover,
+.sign-icon-btn:focus {
+    color: #0A8FDC;
+    background-color: transparent;
+}
+
+.sign-icon-btn .anticon {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .sign-icon-btn .anticon {
+        font-size: 16px;
+    }
+}
+
+.sign-icon-btn .anticon svg {
+    display: block;
+}
+
+.sign-icon-btn.ant-btn-icon-only > * {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .sign-icon-btn.ant-btn-icon-only > * {
+        font-size: 16px;
+    }
+}
+
+.sign-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-form .form-field {
+    margin-bottom: 20px;
+}
+
+.sign-form .form-btn-field {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.sign-form .form-field-action {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: auto;
+}
+
+.sign-form .form-field-action span {
+    margin-right: 8px;
+    display: inline-block;
+}
+
+[dir=rtl] .sign-form .form-field-action span {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.underlineNone {
+    text-decoration: none;
+}
+
+.colorTextPrimary {
+    color: #0A8FDC;
+}
+
+.rememberMe {
+    position: relative;
+}
+
+.rememberMe label {
+    margin-bottom: 10px;
+}
+
+
+
+

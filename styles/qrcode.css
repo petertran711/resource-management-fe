@@ -1,0 +1,23 @@
+.demo-wrap {
+    position: relative;
+    background-color: #6f42c1;
+}
+
+.demo-wrap:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-image: url('../public/images/qrcode-bg.jpg');
+    background-repeat:  no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.demo-content {
+    position: relative;
+}
